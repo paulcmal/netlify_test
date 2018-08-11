@@ -1,5 +1,4 @@
 +++
-title = "index"
 template = "index.html"
 
 # Whether to sort pages by "date", "weight", or "none". More on that below
@@ -13,3 +12,5 @@ weight = 0
 # No pagination will happen if this isn't set or if the value is 0
 paginate_by = 5
 +++
+
+Bonjour, i love this revolutionary static site generator.
