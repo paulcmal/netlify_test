@@ -13,10 +13,6 @@
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") }}">
       {% endif %}
 
-      {% block js %}
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
-      {% endblock js %}
-
       {% block css %}
           <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) }}">
       {% endblock css %}
@@ -69,9 +65,11 @@
             <main>
                 <div class="content" id="mobile-panel">
                     {% block content %}
-                        <div class="posts">
-                            BLAHBLAH
-                        </div>
+                        <article class="post">
+                            <div>
+                              {{ section.content | safe }}
+                            </div>
+                        </article>
                     {% endblock content %}
                 </div>
             </main>
@@ -79,10 +77,6 @@
             {% block footer %}
             {% endblock footer %}
         </div>
-
-      {% block js_body %}
-          <script type="text/javascript" src="{{ get_url(path="even.js", trailing_slash=false) }}" ></script>
-      {% endblock js_body %}
     </body>
 
 </html>
