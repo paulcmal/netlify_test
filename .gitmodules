@@ -1,0 +1,6 @@
+[submodule "themes/even"]
+	path = themes/even
+	url = https://github.com/Keats/even
+[submodule "themes/after-dark"]
+	path = themes/after-dark
+	url = https://github.com/Keats/after-dark
